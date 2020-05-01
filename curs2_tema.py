@@ -50,8 +50,8 @@ while True:
              10: 'Octombrie', 11: 'Noiembrie', 12: 'Decembrie'
             }
 
-    if LL == "00":
-        print("CNP gresit. Luna nu poate fi 00")
+    if LL == "00" or int(LL) > 12:
+        print("CNP gresit. Luna nu exista!")
         break
     elif LL[0] == "0":
         print("Luna nasterii este " + Luna[int(LL[1:])])
