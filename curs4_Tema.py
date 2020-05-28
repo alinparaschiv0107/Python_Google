@@ -84,3 +84,4 @@ while day < 25:
 
 df = pd.DataFrame(info, columns=main_header)
 df.to_excel('Tema.xls', index=0)
+df.to_html('Tema.html', index=0, encoding="utf-8")
